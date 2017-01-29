@@ -23,3 +23,5 @@ And access \\ip-addr\share
     SHARE_NAME=share
     SHARE_DIR=/share
 
+    docker run -p 445:445 -v /home/somename:/share -e WORKGROUP=WORKGROUP -e USER_ID=1000 -e USER_NAME=samba -e PASSWORD=samba -e SHARE_NAME=share -e SHARE_DIR=/share knaou/share-by-samba
+
