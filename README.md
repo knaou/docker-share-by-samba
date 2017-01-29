@@ -12,7 +12,7 @@ Bind 445/tcp and set volume mapping to /share.
 
     docker run -p 445:445 -v /home/somename:/share knaou/share-by-samba
 
-And access \\ip-addr\share
+And access \\ip-addr\share (User: samba, Pass: samba)
 
 ## Full options
 
