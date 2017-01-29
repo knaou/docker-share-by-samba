@@ -77,7 +77,6 @@ echo "PASSWORD=<secret>"
 echo "SHARE_NAME=$SHARE_NAME"
 echo "SHARE_DIR=$SHARE_DIR"
 
-/usr/sbin/nmbd -D
 /usr/sbin/smbd -D
-tail -f /var/log/samba/log.*
+tail -f /var/log/samba/log.smbd
 
