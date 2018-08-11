@@ -21,7 +21,6 @@ if [ "$SHARE_DIR" == "" ]; then
 fi
 
 create_smb_conf(){ 
-if [ ! -e /etc/samba/smb.conf ]; then
 (cat <<-EOF
 [global]
 workgroup = $WORKGLOUP
@@ -33,7 +32,6 @@ writeable = yes
 path = $SHARE_DIR
 EOF
 ) > /etc/samba/smb.conf
-fi
 }
 
 create_user(){
